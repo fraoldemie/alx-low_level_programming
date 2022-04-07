@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc main-0.c -o c.out
+gcc 0-main.c -o c.out
