@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -E main.c > c.c
+gcc $CFILE -E -o c
