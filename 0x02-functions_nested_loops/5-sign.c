@@ -3,7 +3,7 @@
  * _sign - checks for the sign of a number.
  *
  */
-int _sing(int n)
+int print_sign(int n)
 {
 	if(n > 0)
 	{
