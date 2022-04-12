@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sign - checks for the sign of a number.
+ *print_sign - checks for the sign of a number.
  *
  * @n: input number
  *

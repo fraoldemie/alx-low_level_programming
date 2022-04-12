@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _abs returns the absolute value of a number
+ * _abs - returns the absolute value of a number
  *
  * @n: number whose absolute value is to be found
  *
@@ -10,13 +10,9 @@
  */
 int _abs(int n)
 {
-	int a;
-
-	if (n < 0)
-		a = -n;
-
-	else
-	       a =n;	
-	
-	return (a);
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
 }
