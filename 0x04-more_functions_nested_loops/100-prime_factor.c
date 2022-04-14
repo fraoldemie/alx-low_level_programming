@@ -6,6 +6,27 @@
  *
  * Return: the largest prime factor of the number
  */
+int prime_checker(int n)
+{
+	int R = 1;
+	
+	for (int i = n; i > 1; i--) 
+	{
+		if ( n % i == 0)
+		{
+			R = 0;
+			break;
+		}
+	}
+	
+	if ( R == 1) 
+	{
+		return (1);
+	}
+	else
+		return (0);
+}
+
 int prime_factor(int c)
 {
 	int i;
@@ -16,7 +37,7 @@ int prime_factor(int c)
 	
 	while (i > 0)
 	{
-		if ((c / i) % == 0)
+		if ((c / i) % == 0 && prime_checker(i) == 1)
 		{
 			p_f = i;
 			break;
