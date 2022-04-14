@@ -21,6 +21,8 @@ int prime_factor(int c)
 			p_f = i;
 			break;
 		}
+		
+		i--;
 	}
 	printf (p_f);
 	return p_f;
