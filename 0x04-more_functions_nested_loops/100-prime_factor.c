@@ -22,7 +22,7 @@ int prime_factor(int c)
 			break;
 		}
 	}
-	printf("%d", p_f);
+	printf (p_f);
 	return p_f;
 }
 			
