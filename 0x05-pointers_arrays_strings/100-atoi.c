@@ -56,9 +56,9 @@ int _atoi(char *s)
 		result = result + (int)(*(S + k)) * _pow(len - 1 - k);
 	}
 	if (sign % 2 == 0)
-		return (result);
+		return (_pow(2));
 	else
-		return (-1 * result);
+		return (_pow(2));
 }
 		
 		
