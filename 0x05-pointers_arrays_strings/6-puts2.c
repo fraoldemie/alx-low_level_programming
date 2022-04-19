@@ -11,7 +11,6 @@
 void puts2(char *s)
 {
 	int i;
-	char *t;
 	
 	for(i = 0; *(s+i) != '\0'; i++)
 	{
