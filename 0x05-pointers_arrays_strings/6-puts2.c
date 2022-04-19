@@ -15,4 +15,5 @@ void puts2(char *s)
 	{
 		putchar(*(s+i));
 	}
+	putchar('\n');
 }
