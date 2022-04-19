@@ -11,9 +11,12 @@
 void puts2(char *s)
 {
 	int i;
-	for(i = 0; *(s+i) != '\0'; i = i + 2)
+	char *t;
+	
+	for(i = 0; *(s+i) != '\0'; i++)
 	{
-		putchar(*(s+i));
+		if(i%2 == 0)
+			putchar(*(s+i));
 	}
 	putchar('\n');
 }
