@@ -30,7 +30,7 @@ int _atoi(char *s)
 	int len = 0;
 	int sign = 0;
 	int result;
-	char *S;
+	char *S = "";
 	
 	while (*(s + i) != '\0')
 	{
