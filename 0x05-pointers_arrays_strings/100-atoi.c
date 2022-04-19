@@ -6,6 +6,8 @@
  *
  * @s: the input string
  *
+ * @a: the power 
+ *
  * Return: the int value
  *
  */
