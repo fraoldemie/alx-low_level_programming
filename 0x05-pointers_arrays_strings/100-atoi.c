@@ -53,7 +53,7 @@ int _atoi(char *s)
 	}
 	for (k = len - 1; k >= 0; k--)
 	{
-		result = *(S + k) * _pow(len - 1 - k);
+		result = result + (int)(*(S + k)) * _pow(len - 1 - k);
 	}
 	if (sign % 2 == 0)
 		return (result);
