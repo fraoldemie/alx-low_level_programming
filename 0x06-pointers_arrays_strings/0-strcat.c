@@ -12,7 +12,7 @@
 char * _strcat(char *dest, char *src)
 {
 	int i;
-	int len;
+	int len = 0;
 	int j = 0;
 	
 	for(i = 0; *(dest + i) != '\0'; i++)
