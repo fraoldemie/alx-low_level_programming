@@ -25,7 +25,7 @@ char * _strcat(char *dest, char *src)
 		len2++;
 	}
 	char result[len + len2 + 1];
-	for (i = 0; i < len; i++)
+ /* 	for (i = 0; i < len; i++)
 	{
 		result[i] = dest[i];
 	}
@@ -34,6 +34,7 @@ char * _strcat(char *dest, char *src)
 		result[len + j] = src[j];
 	}
 	result[len + len2] = '\0';
+*/
 	return (result);
 }
 		
