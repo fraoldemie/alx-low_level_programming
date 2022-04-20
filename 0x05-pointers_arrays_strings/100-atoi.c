@@ -6,8 +6,6 @@
  *
  * @s: the input string
  *
- * @a: the power 
- *
  * Return: the int value
  *
  */
@@ -35,8 +33,3 @@ int _atoi(char *s)
 	}
 	return (num * sign);
 }
-		
-		
-	
-	
-	
