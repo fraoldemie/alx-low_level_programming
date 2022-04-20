@@ -11,54 +11,29 @@
  * Return: the int value
  *
  */
-int _pow(int a)
-{
-	int i;
-	int result = 1;
-	
-	for (i = 1; i <= a; i++)
-	{
-		result = result * 10;
-	}
-	return (result);
-}
-		
 int _atoi(char *s)
 {
-	int R = 0;
-	int i = 0;
-	int j = 0;
-	int k;
-	int len = 0;
-	int sign = 0;
-	int result;
-	char *S = "";
-	
-	while (*(s + i) != '\0')
+	int sign;
+	unsigned int num;
+	char *temp;
+
+	temp = s;
+	num = 0;
+	sign = 1;
+	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
 	{
-		if (*(s + i) >= '0' && *(s + i) <= '9')
-			R = 1;
-		if (R == 0 && *(s + i) == '-')
-			sign++;
-		if (R == 1)
-		{
-			*(S + j) = *(s + i);
-			j++;
-		}
-		i++;
+		if (*temp == '-')
+			sign *= -1;
+		temp++;
 	}
-	for (k = 0; *(S + k) != '\n'; k++)
+	if (*temp != '\0')
 	{
-		len++;
+		do {
+			num = num * 10 + (*temp - '0');
+			temp++;
+		} while (*temp >= '0' && *temp <= '9');
 	}
-	for (k = len - 1; k >= 0; k--)
-	{
-		result = result + (int)(*(S + k)) * _pow(len - 1 - k);
-	}
-	if (sign % 2 == 0)
-		return (_pow(2));
-	else
-		return (_pow(2));
+	return (num * sign);
 }
 		
 		
