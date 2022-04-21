@@ -7,9 +7,9 @@
  *
  * @dest: second input string
  *
- * Return: concatenated string
+ * Return: pointer to concatenated string
  */
-char * _strncpy(char *dest, char *src, int n)
+char * _strcat(char *dest, char *src)
 {
     	int i;
 	int len = 0;
@@ -20,21 +20,12 @@ char * _strncpy(char *dest, char *src, int n)
 	{
 		len++;
 	}
-	for (i = 0; *(src + i) != '\0'; i++)
+	while(dest[len + j] != '\0')
 	{
-		len2++;
+		dest[len + j] = src[j];
+		j++;
 	}
-	char result[len + len2 + 1];
- 	for (i = 0; i < len; i++)
-	{
-		result[i] = dest[i];
-	}
-	for (j = 0; j < n; j++)
-	{
-		result[len + j] = src[j];
-	}
-	
-	return (result);
+	dest[len + j] = '\0';
 }
 		
 		
