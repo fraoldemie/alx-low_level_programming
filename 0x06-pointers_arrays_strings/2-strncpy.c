@@ -21,7 +21,7 @@
 	 i = 0;
  	while (i < n)
 	{
-		dest[i] = src[i];
+		*(dest + i) = *(src + i);
 		i++;
 	}
 	 return (R);
