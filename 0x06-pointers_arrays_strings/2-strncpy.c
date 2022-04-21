@@ -1,30 +1,24 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strncpy - copies n elements of a given string to another string
+ * _strncpy - Write a function that copies a string, with number of bytes
+ * @dest: This is the output dest
+ * @src: This is the input source
+ * @n: This is the number of bytes to copy
  *
- * @dest: the first string
- *
- * @src: the second string
- *
- * @n: the number of elements to be copied
- *
- * Return: the resulting string
+ *Return: Copied string with the number of bytes
  */
- char *_strncpy(char *dest, char* src, int n)
- {
-	int i;
-	while (i < n && src[i] != '\0')
+
+char *_strncpy(char *dest, char *src, int n)
+{
+	int index;
+
+	for (index = 0; index < n && src[index] != '\0' ; index++)
 	{
-	dest[i] = src[i];
-	i++;
+		dest[index] = src[index];
 	}
-	 if (i < n)
-	 {
-		 while (i < n)
-			 dest[i] = '\0';
-	 }
-	 return (dest)
- }
-	
+	for (; index  < n; index++)
+	{
+		dest[index] = '\0';
+	}
+	return (dest);
+}
