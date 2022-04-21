@@ -7,7 +7,7 @@
  *
  * Return: the string with all uppercase characters
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	for (i = 0; str[i] != '\0'; i++)
 	{
