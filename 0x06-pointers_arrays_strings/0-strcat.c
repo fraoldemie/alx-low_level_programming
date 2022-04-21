@@ -27,13 +27,13 @@ char * _strcat(char *dest, char *src)
 	char result[len + len2 + 1];
  	for (i = 0; i < len; i++)
 	{
-		result[i] = dest[i];
+		*(result + i) = *(dest + i);
 	}
-	for (j = 0; result[len + j] != '\0'; j++)
+	for (j = 0; *(result + len + j) != '\0'; j++)
 	{
-		result[len + j] = src[j];
+		*(result + len + j) = *(src + j);
 	}
-	result[len + len2] = '\0';
+	*(result + len + len2) = '\0';
 	return (result);
 }
 		
