@@ -1,43 +1,29 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
- * _strncat - copys a given number of characters from one string to the other
+ * _strncat - Write a function that concatenates two strings. it will use at
+ *            most n bytes from src
  *
- * @dest: the destination string
+ * @dest: This is the output  dest
+ * @src: This is the input src
+ * @n: This is the number bytes fro src
  *
- * @src: the source string
- *
- * @n: the number of characters to be copied
- *
- * Return: pointer to the final string
+ * Return: This is my return
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j, len;
-	
-	j = 0;
-	for (i = 0; dest[i] != '\0'; i++)
+	int index, count;
+
+	for (index = 0; dest[index] != '\0'; index++)
+		;
+	for (count = 0; count < n && src[count] != '\0'; count++)
 	{
-		len++;
+		dest[index] = src[count];
+		index++;
 	}
-	while (j < n && src[j] != '\0')
+	if (count < n)
 	{
-		dest[len] = src[j];
-		len++;
-		j++
-	}
-	if (src[j] == '\0')
-	{
-		while (j < n)
-		{
-			dest[len] = '\0';
-			j++;
-			len++;
-				
-		}
+	dest[index] = '\0';
 	}
 	return (dest);
 }
-	
-   
