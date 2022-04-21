@@ -1,30 +1,21 @@
 #include "main.h"
-
 /**
- * strcmp - compares the characters of two strings
+ * _strcmp - Write a function that compares two strings.
  *
- * @s1: the first string
+ * @s1: This is the input string
+ * @s2: This is the input string
  *
- * @s2: the second string
- *
- * Return: the difference between the first two unmached characters of the two strings
+ * Return: If the strings are equals return "0", if not return other number
  */
+
 int _strcmp(char *s1, char *s2)
 {
-	int i;
-	int result;
-
-	i = 0;
-	result = 0;
-	while (*(s1 + i) != '\0' && *(s2 + i) != '\0')
+	for (; (*s1 != '\0' && *s2 != '\0') && (*s1 == *s2); s1++, s2++)
+		;
+	if (*s1 == *s2)
 	{
-		if (*(s1 + i) != *(s2 + i))
-		{
-			break;
-		}
-		i++;
+		return (0);
 	}
-	result = (int)*(s1 + i) - (int)*(s2 + i);
-	return (result);
+	return (*s1 - *s2);
 }
 			       
