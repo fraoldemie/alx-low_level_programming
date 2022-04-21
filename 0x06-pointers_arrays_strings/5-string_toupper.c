@@ -7,14 +7,14 @@
  *
  * Return: the string with all uppercase characters
  */
-char *string_toupper(char *str)
+char *string_toupper(char *hi)
 {
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; hi[i] != '\0'; i++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'A')
+		if (hi[i] >= 'a' && hi[i] <= 'A')
 		{
-			str[i] = str[i] - ('a' - 'A');
+			hi[i] = hi[i] - ('a' - 'A');
 		}
 	}
-	return (str);
+	return (hi);
 }
