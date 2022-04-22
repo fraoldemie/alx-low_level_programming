@@ -21,7 +21,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	int N2;
 	int R;
 	int i, j;
-	
+
 	len = 0;
 	len2 = 0;
 	N1 = 0;
@@ -31,14 +31,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		;
 	for (; n2[len2] != '\0'; len2++)
 		;
-	for (i = len -1; i >= 0; i--)
+	for (i = len - 1; i >= 0; i--)
 	{
 		int p = 1;
 		for (j = 0; j < i; j++)
 		{
 			p = 10 * p;
 		}
-		N1 = N1 + n1[i] * p;
+		N1 = N1 + (n1[i]-'0') * p;
 	}
 	for (i = len2 -1; i >= 0; i--)
 	{
@@ -47,7 +47,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		{
 			p = 10 * p;
 		}
-		N2 = N2 + n2[i] * p;
+		N2 = N2 + (n2[i]-'0') * p;
 	}
 	R = N1 + N2;
 	for (i = size_r - 1; i >= 0; i--)
