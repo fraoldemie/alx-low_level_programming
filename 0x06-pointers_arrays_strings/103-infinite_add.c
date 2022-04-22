@@ -50,7 +50,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		N2 = N2 + (n2[i]-'0') * p;
 	}
 	R = N1 + N2;
-	for (i = size_r - 1; i >= 0; i--)
+	for (i = size_r - 2; i >= 0; i--)
 	{
 		r[i] = R % 10 + '0';
 		R = R / 10;
