@@ -15,13 +15,14 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
+	
 	int len;
 	int len2;
 	int N1;
 	int N2;
 	int R;
 	int i, j;
-
+	
 	len = 0;
 	len2 = 0;
 	N1 = 0;
@@ -55,8 +56,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		r[i] = R % 10 + '0';
 		R = R / 10;
 	}
-	r[size_r] = '\0';
+
 	if (R > 0)
-		return (0);
-	return (r);
+		return (r);
+	return (0);
 }
