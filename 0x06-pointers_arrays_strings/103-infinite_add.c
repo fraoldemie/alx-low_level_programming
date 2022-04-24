@@ -58,6 +58,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	}
 
 	if (R > 0)
-		return (r);
-	return (0);
+		return (0);
+	return (r);
 }
