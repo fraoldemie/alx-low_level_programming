@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _memcpy - copies a given number of bytes from one memory area to another
  *
@@ -21,4 +20,3 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
