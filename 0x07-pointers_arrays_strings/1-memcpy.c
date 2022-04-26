@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _memcpy - copies a given number of bytes from one memory area to another
  *
