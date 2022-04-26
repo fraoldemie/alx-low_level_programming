@@ -1,24 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _memset - fills up a given number of memory locations with a given pointer
- *
- * @s: the starting location of the memory adresses to be filled
- *
- * @b: the character whose pointer we use to fill up the adresses
- *
- * @n: the number of memory locations to be filled
- *
- * Return: the pointer to the filled up memory locations
+ * _memset - fills memory with a constant byte.
+ * @s: source string
+ * @b: the contant byte for filling
+ * @n: lenght of buffer
+ * Return: new string.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
-	
-	for (i = 0; i < n; i++)
+	unsigned int i = 0;
+
+	while (i < n)
 	{
-		s[i] = b;
-	} 
+		*(s + i) = b;
+		i++;
+	}
 	return (s);
 }
