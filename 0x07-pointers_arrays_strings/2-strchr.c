@@ -12,7 +12,7 @@
 char *_strchr(char *s, char c)
 {
 	int R = 0;
-	int *C;
+	char *C;
 	int i;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			R = 1;
-			C = (s[i]);
+			C = &(s[i]);
 			break;
 		}
 	}
