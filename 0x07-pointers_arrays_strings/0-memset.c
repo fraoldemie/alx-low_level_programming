@@ -22,5 +22,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		S[i] = B;
 	} 
-	return S;
+	s = S;
+	return s;
 }
