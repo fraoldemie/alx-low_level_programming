@@ -15,7 +15,8 @@ char *_strpbrk(char *s, char *accept)
     char *s = "hello, world";
     char *accept = "world";
 
-	for (i = 0; s[i] != '\0'; i++){
+	for (i = 0; s[i] != '\0'; i++)
+	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
@@ -26,7 +27,7 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 		if (R == 1) 
-		break;
+			break;
 	}
 	if (R == 1)
 			return (C);
