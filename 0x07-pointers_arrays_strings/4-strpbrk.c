@@ -12,9 +12,6 @@ char *_strpbrk(char *s, char *accept)
 	int R = 0;
 	char *C;
 
-    char *s = "hello, world";
-    char *accept = "world";
-
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
